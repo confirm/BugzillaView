@@ -1,0 +1,97 @@
+/**
+ * @file    BugzillaView/stylesheet.css
+ *
+ * @brief   BugzillaView CSS file.
+ *
+ * BugzillaView will reformat/replace the interwiki link with the following
+ * HTML markup...
+ *
+ *  <a>
+ *      <span class="bug bug-status-{status} bug-resolution-{resolution}">
+ *          <img src=".../bug.png">
+ *          <span class="bug-label-description">{description}</span>
+ *          <span class="bug-label-status">{status}</span>
+ *          <span class="bug-label-resolution">{resolution}</span>
+ *      </span>
+ *  </a>
+ *
+ *  ... where {description}, {status} and {resolution} will directly be fetched
+ * from the BugZilla database.
+ *
+ * If a bug is not found in the BugZilla database, then the {status} will be set
+ * to "notfound".
+ */
+
+/* GENERIC */
+
+.bug-label-description:before
+{
+    content: ' "';
+}
+
+.bug-label-description:after
+{
+    content: '" ';
+}
+
+.bug-label-status,
+.bug-label-resolution
+{
+    font-size: 70%;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+/* STATUS */
+
+.bug-status-notfound
+{
+    color: #c00;
+    font-weight: bold;
+}
+
+.bug-status-unconfirmed,
+.bug-status-new,
+.bug-status-reopened
+{
+    color: #c00;
+}
+
+.bug-status-assigned,
+.bug-status-in-progress
+{
+    color: #0a0;
+}
+
+.bug-status-resolved,
+.bug-status-verified,
+.bug-status-closed
+{
+    color: #888;
+}
+
+.bug-status-resolved .bug-label-status,
+.bug-status-verified .bug-label-status,
+.bug-status-closed .bug-label-status
+{
+    display: none;
+}
+
+/* RESOLUTION */
+
+.bug-resolution-fixed .bug-label-resolution,
+.bug-resolution-worksforme .bug-label-resolution
+{
+    color: #0a0;
+}
+
+.bug-resolution-invalid .bug-label-resolution,
+.bug-resolution-wontfix .bug-label-resolution,
+.bug-resolution-duplicate .bug-label-resolution
+{
+    color: #c00;
+}
+
+.bug-moved .bug-label-resolution {
+    color: #c60;
+}
