@@ -29,6 +29,7 @@ $wgExtensionCredits['other'][] = array(
     'name'           => 'BugzillaView',
     'version'        => '1.0.1',
     'author'         => 'Dominique Barton',
+    'url'            => 'https://www.mediawiki.org/wiki/Extension:BugzillaView',
     'descriptionmsg' => 'bugzillaview-desc'
 );
 
