@@ -1,12 +1,13 @@
 <?php
 /**
- * @file    BugzillaView/hooks.inc.php
- *
- * @brief   Implementation of the hook functions.
+ * @brief Implementation of the hook functions.
+ * @file BugzillaView/hooks.inc.php
+ * 
+ * @author Dominique Barton (dbarton), confirm IT solutions GmbH
  */
 
 /**
- * @brief   Callback function for LinkEnd hook.
+ * @brief Callback function for LinkEnd hook.
  *
  * This function will reformat all links, matching the interwiki prefix defined
  * as BugzillaView link.
@@ -97,4 +98,3 @@ function bugzillaViewBeforePageDisplay(&$output, &$skin)
     $output->addStyle($wgScriptPath.'/extensions/BugzillaView/stylesheet.css');
     return TRUE;
 }
-?>

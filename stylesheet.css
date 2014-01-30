@@ -24,19 +24,16 @@
 
 /* GENERIC */
 
-.bug-label-description:before
-{
+.bug-label-description:before {
     content: ' "';
 }
 
-.bug-label-description:after
-{
+.bug-label-description:after {
     content: '" ';
 }
 
 .bug-label-status,
-.bug-label-resolution
-{
+.bug-label-resolution {
     font-size: 70%;
     font-weight: bold;
     vertical-align: top;
@@ -44,51 +41,44 @@
 
 /* STATUS */
 
-.bug-status-notfound
-{
+.bug-status-notfound {
     color: #c00;
     font-weight: bold;
 }
 
 .bug-status-unconfirmed,
 .bug-status-new,
-.bug-status-reopened
-{
+.bug-status-reopened {
     color: #c00;
 }
 
 .bug-status-assigned,
-.bug-status-in-progress
-{
+.bug-status-in-progress {
     color: #0a0;
 }
 
 .bug-status-resolved,
 .bug-status-verified,
-.bug-status-closed
-{
+.bug-status-closed {
     color: #888;
 }
 
 .bug-status-resolved .bug-label-status,
 .bug-status-verified .bug-label-status,
-.bug-status-closed .bug-label-status
-{
+.bug-status-closed .bug-label-status {
     display: none;
 }
 
 /* RESOLUTION */
 
 .bug-resolution-fixed .bug-label-resolution,
-.bug-resolution-worksforme .bug-label-resolution
-{
+.bug-resolution-worksforme .bug-label-resolution {
     color: #0a0;
 }
 
 .bug-resolution-invalid .bug-label-resolution,
 .bug-resolution-wontfix .bug-label-resolution,
-.bug-resolution-duplicate .bug-label-resolution
-{
+.bug-resolution-duplicate .bug-label-resolution {
     color: #c00;
 }
 

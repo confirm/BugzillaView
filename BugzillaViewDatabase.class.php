@@ -1,10 +1,9 @@
 <?php
 /**
- * @file    BugzillaView/BugzillaViewDatabase.class.php
+ * @brief Implementation of BugzillaViewDatabase class
+ * @file BugzillaView/BugzillaViewDatabase.class.php
  *
- * @brief   Implementation of BugzillaViewDatabase class.
- *
- * @author  dbarton, confirm IT solutions GmbH
+ * @author Dominique Barton (dbarton), confirm IT solutions GmbH
  */
 
 /**
@@ -112,5 +111,3 @@ class BugzillaViewDatabase
         return $this->pdo->query($query);
     }
 }
-
-?>
