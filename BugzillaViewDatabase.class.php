@@ -80,7 +80,7 @@ class BugzillaViewDatabase
         $this->disconnect();
 
         $this->pdo = new PDO(
-            $driver.':'.$host.'='.$host.';dbname='.$database,
+            $driver.':'.host.'='.$host.';dbname='.$database,
             $username,
             $password,
             array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)
