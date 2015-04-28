@@ -16,4 +16,4 @@ MediaWiki extension for displaying BugZilla bugs inside wiki pages.
 * `[[bugzilla:876]]`
 * `[[bugzilla:876|Any bug description]]`
 
-Note that you will have to create the interwiki prefix ``bugzilla`` first.
+Note that you will have to create the [interwiki prefix](http://www.mediawiki.org/wiki/Manual:Interwiki) ``bugzilla`` first.
